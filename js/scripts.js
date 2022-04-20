@@ -6,6 +6,20 @@
 //
 // Scripts
 // 
+document.querySelector('#submit').addEventListener('click',function(){
+
+    console.log("teste")
+     let name = document.querySelector('#name').value;
+     let email = document.querySelector('#email').value;
+     let phone = document.querySelector('#phone').value;
+     let message = document.querySelector('#message').value;
+     let exampleFormControlSelect1 = document.querySelector('#exampleFormControlSelect1').value;
+     
+    let url = "https://api.whatsapp.com/send?phone=5584996300893&text= Bem vindo a Roseame -->> %0A Qual é o seu nome? %0A " + cliente + " %0A Qual o seu sobrenome ?%0A" + 
+    sobrenome + "%0A Qual o seu e-mail %0A "+ email +" %0A Qual é o seu telefone ? %0A "+ telefone +" %0A Uma cotação para quantas vidas ? %0A" + exampleFormControlSelect1; 
+    window.open(url);
+    
+    });
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -52,3 +66,27 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+        // $('.portfolio-item').isotope({
+        //  	itemSelector: '.item',
+        //  	layoutMode: 'fitRows'
+        //  });
+        $('.portfolio-menu ul li').click(function(){
+            $('.portfolio-menu ul li').removeClass('active');
+            $(this).addClass('active');
+            
+            var selector = $(this).attr('data-filter');
+            $('.portfolio-item').isotope({
+                filter:selector
+            });
+            return  false;
+        });
+        $(document).ready(function() {
+        var popup_btn = $('.popup-btn');
+        popup_btn.magnificPopup({
+        type : 'image',
+        gallery : {
+            enabled : true
+        }
+        });
+        });

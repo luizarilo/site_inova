@@ -11116,3 +11116,48 @@ margin-left: 180px;
   margin-top: 115px;
 }
 
+::-webkit-scrollbar{
+  width:15px;
+}
+
+::-webkit-scrollbar-track{
+  background:#6c757d
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 30px;
+  background:#2c3e50
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+/* .container{
+	width:90%
+	margin:10px auto;
+} */
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	/*width:100%;*/
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}

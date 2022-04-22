@@ -13,10 +13,8 @@ document.querySelector('#submit').addEventListener('click',function(){
      let email = document.querySelector('#email').value;
      let phone = document.querySelector('#phone').value;
      let message = document.querySelector('#message').value;
-     let exampleFormControlSelect1 = document.querySelector('#exampleFormControlSelect1').value;
      
-    let url = "https://api.whatsapp.com/send?phone=5584996300893&text= Bem vindo a Roseame -->> %0A Qual é o seu nome? %0A " + cliente + " %0A Qual o seu sobrenome ?%0A" + 
-    sobrenome + "%0A Qual o seu e-mail %0A "+ email +" %0A Qual é o seu telefone ? %0A "+ telefone +" %0A Uma cotação para quantas vidas ? %0A" + exampleFormControlSelect1; 
+    let url = "https://api.whatsapp.com/send?phone=5584996300893&text= <<-- Bem vindo a Roseame -->> %0A *Qual é o seu nome?* %0A " + name + "%0A *Qual o seu e-mail?* %0A "+ email +" %0A *Qual é o seu telefone?* %0A "+ phone +" %0A *O que deseja?* %0A" + message; 
     window.open(url);
     
     });

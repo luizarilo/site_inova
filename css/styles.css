@@ -11153,9 +11153,9 @@ body{
 	transition:all .5s ease;
 }
 
-.portfolio-item{
-	/*width:100%;*/
-}
+/*.portfolio-item{
+	/*width:100%;
+}*/
 .portfolio-item .item{
 	/*width:303px;*/
 	float:left;
